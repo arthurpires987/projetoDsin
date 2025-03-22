@@ -1,0 +1,147 @@
+/* Estilização do cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilização da seção de agendamento */
+#agendamento {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+/* Estilização dos inputs e botões */
+select, button {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#logoutButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilização da tabela de horários */
+#horariosTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#horariosTable th, #horariosTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Cabeçalho da tabela */
+#horariosTable th {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Cores para horários disponíveis e indisponíveis */
+#horariosTable td.available {
+    background-color: #d4edda; /* Verde */
+    cursor: pointer;
+}
+
+#horariosTable td.unavailable {
+    background-color: #f8d7da; /* Vermelho */
+}
+
+/* Ajuste para os botões no header */
+.header-buttons {
+    gap: 10px;
+    position: absolute;
+    right: 80px;
+    top: 25px;
+}
+
+/* Estiliza os botões do header */
+.btn-header {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-header:hover {
+    background-color: #0056b3;
+}
+
+/* Estilização da mensagem de sucesso ou erro */
+.message-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    z-index: 9999; /* Garante que fique em cima de outros elementos */
+}
+
+.message {
+    background-color: #28a745; /* Verde para sucesso */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.message-container .message.error {
+    background-color: #dc3545; /* Vermelho para erro */
+}
+
+/* Animação de fade-in da mensagem */
+.message-container {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animação para o fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

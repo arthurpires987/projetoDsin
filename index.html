@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cabeleleila Leila</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="imagens/logoCL.jpg" alt="logoCL" id="logoCL">
+            <div class="name">Cabeleleila Leila</div>
+            <div class="name2">Salão de Beleza</div>
+        </a>
+    </header>
+
+    <div class="container">
+        <!-- Tela de Login -->
+        <section id="loginDiv">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <p>Não tem uma conta? <button id="showRegisterForm">Criar Conta</button></p>
+        </section>
+
+        <!-- Tela de Cadastro -->
+        <section id="registerDiv" style="display: none;">
+            <h2>Criar Conta</h2>
+            <form id="registerForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+                <br>
+                <label for="registerEmail">E-mail:</label>
+                <input type="email" id="registerEmail" required>
+                <br>
+                <label for="registerPassword">Senha:</label>
+                <input type="password" id="registerPassword" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <p>Já tem uma conta?
+                <button id="showLoginForm">Fazer Login</button>
+            </p>
+        </section>
+    </div>
+
+    <script src="login.js"></script> <!-- Arquivo JavaScript -->
+</body>
+</html>

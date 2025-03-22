@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    background-color: rgb(226, 226, 226);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: black;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#logoCL {
+    width: 100px;
+}
+
+.name {
+    font-size: 46px;
+}
+
+.name2 {
+    font-size: 30px;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 4px;
+
+    transition: 0.6s;
+}
+
+nav > a:hover {
+    color: rgb(226, 226, 226);
+    background-color: rgb(138, 137, 137);
+}
+
+section {
+    width: 86%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.168);
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    width: 100%;
+
+    bottom: 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background-color: black; /* Cor de fundo da trilha da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor da "bolinha" da barra de rolagem */
+    border-radius: 10px; /* Arredondando a "bolinha" da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor da "bolinha" quando o mouse está em cima */
+}

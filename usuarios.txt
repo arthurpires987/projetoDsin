@@ -1,0 +1,7 @@
+sara@gmail.com:sara1:cliente
+carlos@gmail.com:carlos1:cliente
+val@gmail.com:val1:cliente
+leila@gmail.com:leila1:cliente
+leila1@gmail.com:leila1:cliente
+leila2@gmail.com:leila2:cliente
+jorge@gmail.com:jorge:cliente

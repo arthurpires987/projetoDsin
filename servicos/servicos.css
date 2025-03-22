@@ -1,0 +1,152 @@
+/* Importa a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Configuração global da página */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    background-color: rgb(226, 226, 226);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* Estilização do cabeçalho */
+header {
+    color: black;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#logoCL {
+    width: 100px;
+}
+
+/* Nome do salão */
+.name {
+    font-size: 46px;
+}
+
+.name2 {
+    font-size: 30px;
+}
+
+/* Botão de logout */
+#logoutButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#logoutButton:hover {
+    background-color: #0056b3;
+}
+
+/* Barra de navegação */
+nav {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Links do menu */
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 4px;
+    transition: 0.6s;
+}
+
+/* Efeito hover nos links */
+nav a:hover {
+    color: rgb(226, 226, 226);
+    background-color: rgb(138, 137, 137);
+}
+
+/* Seção principal */
+#servicos {
+    text-align: center;
+}
+
+/* Título da seção */
+#servicoh2 {
+    width: 200px;
+    margin: auto;
+    border-radius: 8px;
+    padding: 2px;
+    font-size: 28px;
+}
+
+/* Container flexível para exibir os serviços */
+.servicosContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+/* Blocos individuais dos serviços */
+.servico {
+    background-color: rgba(226, 226, 226, 0.573);
+    border-radius: 8px;
+    width: 26%;
+    height: 440px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Títulos dos serviços */
+.servico > h3 {
+    font-size: 26px;
+    color: black;
+}
+
+/* Imagens dos serviços */
+.servicoImg {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+/* Personalização da barra de rolagem */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}

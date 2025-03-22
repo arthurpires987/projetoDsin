@@ -1,0 +1,78 @@
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto; /* Garante rolagem normal */
+}
+
+/* Ajuste do container principal para centralizar */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Estiliza a div do login e do cadastro */
+#loginDiv, #registerDiv {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px; /* Evita que o topo fique grudado */
+    margin-bottom: 50px; /* Evita que o final da página fique cortado */
+}
+
+/* Estiliza os inputs */
+#loginDiv input, #registerDiv input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estiliza os botões principais */
+#loginDiv button, #registerDiv button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#loginDiv button:hover, #registerDiv button:hover {
+    background-color: #0056b3;
+}
+
+/* Ajuste para os botões de alternância entre login e cadastro */
+#loginDiv p button, #registerDiv p button {
+    background: none;
+    color: #007BFF;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+#loginDiv p button:hover, #registerDiv p button:hover {
+    color: white;
+    background-color: #007BFF;
+    border-radius: 4px;
+    text-decoration: none;
+}
